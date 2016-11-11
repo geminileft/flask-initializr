@@ -15,6 +15,7 @@ def home():
 @app.route('/admin')
 def admin():
 	data = {"version":version()}
+	data["x"] = "y"
 	return render_template('admin.html', data=data)
 
 @app.route('/pages')
