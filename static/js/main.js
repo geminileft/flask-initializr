@@ -1,3 +1,3 @@
 function list_click(data) {
-	alert(data);
+	$( "#aside_header" ).text(data);
 }
